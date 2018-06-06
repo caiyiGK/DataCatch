@@ -1,0 +1,14 @@
+{
+  "name": "datacatch",
+  "version": "1.0.0",
+  "description": "data catch",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "caiyiweb@iCloud.com",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.5.1"
+  }
+}
