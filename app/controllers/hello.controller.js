@@ -1,10 +1,11 @@
-class HelloController extends App.Controller {
+class HelloController extends App.BaseClass {
 
     /**
      * HELLO
      */
-    async fn_hello () {
-        this.request
+    async fn_hello (ctx, next) {
+        console.log(3434)
+        /**this.request
             .get()
             .end(function(err, res){
                 if (res.ok) {
@@ -12,7 +13,7 @@ class HelloController extends App.Controller {
                 } else {
                     console.log('Oh no! error ' + res.text);
                 }
-            })
+            })**/
     }
 
 }

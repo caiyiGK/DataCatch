@@ -11,7 +11,7 @@ console.log(routerTable)
  */
 const controllers = requireAll({
     dirname: path.join(__dirname, '../app/controllers'),
-    filter: /(.+)\.js$/
+    filter: /(.+)\.controller\.js$/
 });
 
 // console.log(controllers,'0000')
@@ -53,9 +53,9 @@ const controllers = requireAll({
 
                 router[key.toLowerCase()](route, async (ctx, next) => {
                     if (tpm) {
-                        new controllers[tpm][controller](ctx, next)[action]();  // 实例化控制器
+                        await new controllers[tpm][controller]()[action](ctx, next);  // 实例化控制器
                     } else {
-                        new controllers[controller](ctx, next)[action]();
+                        await new controllers[controller]()[action](ctx, next);
                     }
                 });
             }

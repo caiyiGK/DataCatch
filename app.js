@@ -1,7 +1,7 @@
 const Koa = require('koa'); // 导入 Koa
 const bodyParser = require('koa-bodyparser');
 global.App = {};
-global.App.Controller = require('./lib/controller')
+global.App.BaseClass = require('./lib/baseClass')
 const router = require('./middleware/route-map');
 
 const app = new Koa();  // 创建 Koa 对象表示 Web App 本身

@@ -4,11 +4,11 @@ module.exports = {
         GET: 'hello.fn_hello'
     },
 
-    '/hello/:name': {
-        GET: 'catch.index.fn_index'
+    '/list': {
+        GET: 'catch.index.list'
     },
 
-    '/index': {
-        GET: ['catch.index.fn_sigin', 3000, 2000]
-    }
+    //'/index': {
+    //    GET: ['catch.index.fn_sigin', 3000, 2000]
+    //}
 }
