@@ -17,8 +17,7 @@ module.exports = {
             "autoRemove": "disabled"
         },
         "cookieSecret": 'myhd',
-        "myhd": 'mongodb://localhost:27017/myhd',
-        "plex": 'mongodb://localhost:27017/plex'
+        "plex": 'mongodb://localhost:27017/movies',
     }
 
 }
